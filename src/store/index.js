@@ -1,15 +1,8 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex from 'vuex';
+import { praiseMod } from './praise/praise.js';
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+export default Vuex.createStore({
   modules: {
+    praiseMod
   }
-})
+});

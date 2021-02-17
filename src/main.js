@@ -1,12 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import myIcon from '@/components/common/my-icon.vue';
+import './assets/fonts/iconfont.css'
 
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+const vue = createApp(App);
+vue.component('my-icon',myIcon);
+vue.use(router).use(store).mount('#app');
