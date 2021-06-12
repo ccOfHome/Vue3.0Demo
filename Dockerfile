@@ -3,7 +3,7 @@ FROM node:14.15.4
 #安装nginx
 RUN apt-get update \ && apt-get install -y nginx
 #指定工作目录
-wORKDIR /app
+WORKDIR /app
 #将当前目录下的所有文件拷贝到工作目录下
 COPY . /app/
 #声明运行时容器提供服务端口
