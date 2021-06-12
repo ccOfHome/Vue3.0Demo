@@ -1,7 +1,7 @@
 #使用node 6.10.3的精简版作为基础镜像
 FROM node:14.15.4
 #安装nginx
-RUN apt-get update \ && apt-get install -y nginx
+# RUN apt-get update \ && apt-get install -y nginx
 #指定工作目录
 WORKDIR /app
 #将当前目录下的所有文件拷贝到工作目录下
